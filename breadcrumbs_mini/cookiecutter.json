@@ -6,12 +6,12 @@
   "doi": "",
   "docs_url": "https://deg-browser.org/docs",
 
-  "mcp_url": "https://deg-browser.org/mcp",       // optional
-  "api_url": "https://deg-browser.org/api/search",// optional
+  "mcp_url": "https://deg-browser.org/mcp",
+  "api_url": "https://deg-browser.org/api/search",
   "http_method": "GET",
   "timeout_sec": 15,
 
-  "html_route": "/search?q={gene}",               // fallback UI route
+  "html_route": "/search?q={gene}",
   "query_param": "gene",
   "query_example": "TP53",
 
