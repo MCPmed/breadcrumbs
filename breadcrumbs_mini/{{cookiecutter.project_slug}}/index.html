@@ -1,0 +1,31 @@
+<!-- LLM-INSTRUCTIONS
+{
+  "$schema": "https://example.com/llm-webservice-meta-1.1.json",
+
+  "id": "{{ cookiecutter.service_id }}",
+  "description": "{{ cookiecutter.service_description }}",
+  "version": "{{ cookiecutter.version }}",
+  "doi": "{{ cookiecutter.doi }}",
+  "docs": "{{ cookiecutter.docs_url }}",
+
+  "instructions": {
+    "steps": [
+      { "condition": "MCP available",
+        "action": "POST JSON to '{{ cookiecutter.mcp_url }}' with key '{{ cookiecutter.query_param }}'." },
+
+      { "condition": "else if API available",
+        "action": "{{ cookiecutter.http_method }} '{{ cookiecutter.api_url }}' using query string '{{ cookiecutter.query_param }}={{ cookiecutter.query_example }}'." },
+
+      { "condition": "otherwise",
+        "action": "Open '{{ cookiecutter.html_route }}' (replace placeholder) and scrape results." }
+    ]
+  },
+
+  "html_response": {
+    "selector": "{{ cookiecutter.response_selector }}",
+    "fields": {{ cookiecutter.field_map }}
+  },
+
+  "timeout_sec": {{ cookiecutter.timeout_sec }}
+}
+END LLM-INSTRUCTIONS -->

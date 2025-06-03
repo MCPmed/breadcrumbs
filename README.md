@@ -20,7 +20,7 @@ This template enables websites to include an invisible, machine-readable HTML co
 To generate a project:
 
 ```bash
-cookiecutter llm_tags_template --no-input \
+cookiecutter breadcrumbs --no-input \
   project_name="Differential Expression Browser" \
   project_slug="deg-browser" \
   version="1.0.0" \
@@ -45,6 +45,23 @@ cookiecutter llm_tags_template --no-input \
   field2_selector="td:nth-child(2)"
   ```
 
+```bash
+  cookiecutter breadcrumbs_mini --no-input \
+  service_id="deg-browser" \
+  service_description="Differential expression lookup site" \
+  version="1.0.0" \
+  doi="" \
+  docs_url="https://deg-browser.org/docs" \
+  mcp_url="https://deg-browser.org/mcp" \
+  api_url="https://deg-browser.org/api/search" \
+  http_method="GET" \
+  timeout_sec=15 \
+  html_route="/search?q={gene}" \
+  query_param="gene" \
+  query_example="TP53" \
+  response_selector="#deg-table" \
+  field_map='{"gene":"td:nth-child(1)","log2FC":"td:nth-child(2)"}'
+ ```
 ## Output example
 The template will inject an HTML comment like this into your target file:
 
