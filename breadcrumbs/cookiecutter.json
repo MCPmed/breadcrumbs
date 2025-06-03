@@ -1,0 +1,28 @@
+{
+  "project_name": "Gene Lookup Service",
+  "project_slug": "gene-lookup",
+  "version": "1.0.0",
+  "description": "A web service to query gene information via UI or API.",
+  "doi": "",
+  "documentation_url": "",
+
+  "maintainer_name": "Bioinfo Team",
+  "maintainer_email": "contact@example.org",
+
+  "mcp_endpoint_url": "https://example.org/mcp",
+  "api_endpoint_url": "https://example.org/api/search",
+  "http_method": "GET",
+  "timeout": 20,
+
+  "query_route": "/search?q={gene}",
+  "param1_name": "gene",
+  "param1_type": "string",
+  "param1_example": "TP53",
+
+  "response_format": "html_table",
+  "response_selector": "#results-table",
+  "field1_name": "gene",
+  "field1_selector": "td:nth-child(1)",
+  "field2_name": "score",
+  "field2_selector": "td:nth-child(2)"
+}

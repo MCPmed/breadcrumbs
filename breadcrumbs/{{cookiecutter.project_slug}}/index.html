@@ -1,0 +1,40 @@
+<!-- LLM-INSTRUCTIONS
+{
+  "$schema": "https://example.com/llm-webservice-meta-1.0.json",
+  "id": "{{ cookiecutter.project_slug }}",
+  "name": "{{ cookiecutter.project_name }}",
+  "version": "{{ cookiecutter.version | default('0.1.0') }}",
+  "description": "{{ cookiecutter.description }}",
+  "doi": "{{ cookiecutter.doi | default('') }}",
+
+  "contact": {
+    "name": "{{ cookiecutter.maintainer_name }}",
+    "email": "{{ cookiecutter.maintainer_email }}"
+  },
+
+  "query_spec": {
+    "route": "{{ cookiecutter.query_route }}",           // e.g. "/search?q={param}"
+    "method": "{{ cookiecutter.http_method | default('GET') }}",
+    "parameters": [
+      {
+        "name": "{{ cookiecutter.param1_name }}",
+        "type": "{{ cookiecutter.param1_type | default('string') }}",
+        "example": "{{ cookiecutter.param1_example }}"
+      }
+      /* add more if needed */
+    ]
+  },
+
+  "response_spec": {
+    "format": "{{ cookiecutter.response_format | default('html_table') }}",
+    "selector": "{{ cookiecutter.response_selector }}",
+    "fields": {
+      "{{ cookiecutter.field1_name }}": "{{ cookiecutter.field1_selector }}",
+      "{{ cookiecutter.field2_name }}": "{{ cookiecutter.field2_selector }}"
+      /* add more if needed */
+    }
+  },
+
+  "timeout_sec": {{ cookiecutter.timeout_sec | default(15) }}
+}
+END LLM-INSTRUCTIONS -->
