@@ -2,7 +2,7 @@
 
 > ⚠️ **Work in Progress**
 >
-> 🚧 This section is under construction. Coming soon.
+> 🚧 This section is under construction.
 
 [![Cookiecutter Template](https://img.shields.io/badge/template-cookiecutter-brightgreen.svg)](https://github.com/cookiecutter/cookiecutter)
 
