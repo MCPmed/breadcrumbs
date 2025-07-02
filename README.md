@@ -1,5 +1,9 @@
 # breadcrumbs - LLM Tags Template
 
+:::caution Work in Progress
+🚧 This section is under construction.
+:::
+
 [![Cookiecutter Template](https://img.shields.io/badge/template-cookiecutter-brightgreen.svg)](https://github.com/cookiecutter/cookiecutter)
 
 This repository is a **Cookiecutter template** for generating LLM-readable metadata blocks that help language models interact with web services via structured HTML or API hints.
