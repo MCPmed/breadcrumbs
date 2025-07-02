@@ -1,8 +1,8 @@
 # breadcrumbs - LLM Tags Template
 
-:::caution Work in Progress
-🚧 This section is under construction.
-:::
+> ⚠️ **Work in Progress**
+>
+> 🚧 This section is under construction. Coming soon.
 
 [![Cookiecutter Template](https://img.shields.io/badge/template-cookiecutter-brightgreen.svg)](https://github.com/cookiecutter/cookiecutter)
 
